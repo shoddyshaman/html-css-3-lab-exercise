@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+* {
+  padding:0px;
+  margin:0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height:34px;
+  position:fixed;
+  left:40px;
+  top:24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  right:300px;
+
+}
+
+.dropdown {
+  display:none;
+  
+}
+
+.btn-menu{
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-size:12px;
+  font-family: "Montserrat";
+  font-weight:bold;
+  padding:8px 12px;
+  border-radius:4px;
+
+}
+
+.desktop-menu {
+  width:350px;
+  display:flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  padding-left:120px;
+  color:white;
+  /* text-align:center; */
+}
+
+span{
+  padding:28px 20px;
+  font-family: "Montserrat";
+}
+
+.container-2 {
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+  flex-direction:column;
+  color:white;
+  padding-top:200px;
+  text-align:center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* margin-top:-80px; */
+  background-image:url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  height:750px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  font-size:36px;
+  padding:12px 0 0 10px;
+  font-family: "Merriweather";
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1{
+  font-size:72px;
+  font-family: "Montserrat";
+  padding:20px;
+  font-weight: 800;
+}
+
+.btn-tell-me-more {
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-size:20px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding:24px 42px;
+  border-radius: 5px;
+
+}
+
+@media (max-width:992px){
+  .desktop-menu {
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dropdown {
+    display:initial;
+    cursor:pointer;
+    font-size:20px;
+    position:fixed;
+    right: 40px;
+    top:20px;
   }
+
+  .mobile-menu {
+    display:initial;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    color:white;
+    position:fixed;
+    left:30px;
+    top:56px;
+    padding:10px;
+    background:#212529;
+    width:100%;
+    margin-left:-30px;
+  }
+
+  .container {
+    background:#212529;
+    height:72px;
+    margin-bottom:0px;
+    width:100%;
+    z-index:4;
+    position:fixed;
+    margin-right:-300px;
+  }
+
+  
+  .logo {
+    height:26px;
+  }
+
+  span {
+    padding:9px;
+    margin-left:30px;
+  }
+
 }
